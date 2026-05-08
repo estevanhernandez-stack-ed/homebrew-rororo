@@ -1,8 +1,8 @@
 cask "rororo" do
-  version "0.2.4"
-  sha256 "f187dfe868750f3bdee5c48f7f27076b711320cdc46318ea070d3dbc1d304b3c"
+  version "0.2.5"
+  sha256 "c1b391fcb6291354cf1419ae9ff010d619ade26eddaab97d49f6744b5495a839"
 
-  url "https://github.com/estevanhernandez-stack-ed/rororo-mac/releases/download/v#{version}/RORORO.dmg"
+  url "https://github.com/estevanhernandez-stack-ed/rororo-mac/releases/download/v#{version}/RORORO.pkg"
   name "RORORO"
   desc "Multi-instance Roblox launcher"
   homepage "https://github.com/estevanhernandez-stack-ed/rororo-mac"
@@ -15,7 +15,9 @@ cask "rororo" do
   auto_updates true # Sparkle handles in-app updates after install.
   depends_on macos: ">= :sonoma" # macOS 14+
 
-  app "RORORO.app"
+  pkg "RORORO.pkg"
+
+  uninstall pkgutil: "com.626labs.rororo-mac"
 
   zap trash: [
     "~/Applications/RORORO",
