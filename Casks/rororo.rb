@@ -4,7 +4,7 @@ cask "rororo" do
 
   url "https://github.com/estevanhernandez-stack-ed/rororo-mac/releases/download/v#{version}/RORORO.dmg"
   name "RORORO"
-  desc "Mac-native multi-Roblox launcher"
+  desc "Multi-instance Roblox launcher"
   homepage "https://github.com/estevanhernandez-stack-ed/rororo-mac"
 
   livecheck do
@@ -20,9 +20,9 @@ cask "rororo" do
   zap trash: [
     "~/Applications/RORORO",
     "~/Library/Application Support/RORORO",
-    "~/Library/Preferences/com.626labs.rororo-mac.plist",
     "~/Library/Caches/com.626labs.rororo-mac",
     "~/Library/HTTPStorages/com.626labs.rororo-mac",
     "~/Library/HTTPStorages/com.626labs.rororo-mac.binarycookies",
+    "~/Library/Preferences/com.626labs.rororo-mac.plist",
   ]
 end
