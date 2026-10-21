@@ -13,7 +13,7 @@ cask "rororo" do
   end
 
   auto_updates true # Sparkle handles in-app updates after install.
-  depends_on macos: ">= :sonoma" # macOS 14+
+  depends_on macos: :sonoma # macOS 14+
 
   pkg "RORORO.pkg"
 
