@@ -5,7 +5,7 @@ cask "rororo" do
   url "https://github.com/estevanhernandez-stack-ed/rororo-mac/releases/download/v#{version}/RORORO.pkg"
   name "RORORO"
   desc "Multi-instance Roblox launcher"
-  homepage "https://github.com/estevanhernandez-stack-ed/rororo-mac"
+  homepage "https://626labs.dev/rororo.html#get"
 
   livecheck do
     url :url
