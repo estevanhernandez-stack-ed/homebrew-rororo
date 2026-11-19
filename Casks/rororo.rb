@@ -1,6 +1,6 @@
 cask "rororo" do
-  version "0.8.0"
-  sha256 "9e8565d2db3e092050187ea49ef2c941a295b0a449ae4e324190d85ee94f6d33"
+  version "0.8.1"
+  sha256 "9ff40c02339f1ebd7378ec9a3864b073c219c6a582a715b3500cd354745318af"
 
   url "https://github.com/estevanhernandez-stack-ed/rororo-mac/releases/download/v#{version}/RORORO.pkg"
   name "RORORO"
